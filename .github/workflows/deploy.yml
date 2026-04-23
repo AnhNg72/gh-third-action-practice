@@ -16,11 +16,8 @@ jobs:
       - name: install dependencies
         run: npm ci
 
-      - name: Install modules
-        run: yarn
-
-      - name: Run ESLint
-        run: yarn run eslint --ext .jsx --fix src
+      - name: Run Lint
+        run: npm run lint
 
       - name: Run test
         run: npm test
