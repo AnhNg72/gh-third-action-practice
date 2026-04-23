@@ -21,7 +21,6 @@ jobs:
 
       - name: Run ESLint
         run: yarn run eslint --ext .jsx --fix src
-#        run: eslint . --ext .js,.jsx,.ts,.tsx
 
       - name: Run test
         run: npm test
